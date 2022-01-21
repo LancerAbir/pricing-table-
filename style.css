@@ -131,3 +131,20 @@ button.header-botton:hover {
     justify-content: flex-end;
     align-items: stretch;
 }
+
+/* Footer Area */
+footer#footer {
+    position: relative;
+    width: 100%;
+}
+footer#footer:after {
+    background-image: url(./img/footer.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: -9;
+    box-sizing: border-box;
+}
