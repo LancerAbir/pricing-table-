@@ -126,7 +126,7 @@ nav li a:hover {
     margin-bottom: 20px;
 }
 
-button.header-botton {
+a.header-botton {
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
@@ -134,9 +134,11 @@ button.header-botton {
     color: #fff;
     font-weight: 700;
     transition: 0.5s;
+    margin-bottom: 35px;
+    display: inline-block;
 }
 
-button.header-botton:hover {
+a.header-botton:hover {
     background-color: #cecece;
     color: #000;
 }
@@ -248,6 +250,34 @@ table.table-box tr th {
     display: flex;
 }
 
+.main-pricing .pricing-box:nth-child(1),
+.pricing-rate-bg-one {
+    background-image: linear-gradient(to bottom, #b8e9e6, #026d68);
+    webkit-clip-path: polygon(0 0, 84% 0, 67% 49%, 0 49%);
+}
+.main-pricing .pricing-box:nth-child(2),
+.pricing-rate-bg-two {
+    background-image: linear-gradient(to bottom, #8fff44, #2e7213);
+    webkit-clip-path: polygon(0 0, 84% 0, 67% 49%, 0 49%);
+}
+.main-pricing .pricing-box:nth-child(3),
+.pricing-rate-bg-three {
+    background-image: linear-gradient(to bottom, #a3e25f, rgb(39, 54, 54));
+    webkit-clip-path: polygon(0 0, 84% 0, 67% 49%, 0 49%);
+}
+
+.main-pricing .pricing-box:nth-child(1) .pricing-header h3 {
+    color: #0b918a;
+}
+
+.main-pricing .pricing-box:nth-child(2) .pricing-header h3 {
+    color: #66c42f;
+}
+
+.main-pricing .pricing-box:nth-child(3) .pricing-header h3 {
+    color: #709b4e;
+}
+
 .pricing-box {
     flex: 1;
     text-align: center;
@@ -257,11 +287,21 @@ table.table-box tr th {
     padding-right: 6px;
     margin-left: 50px;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom, #decba4, #3e5151);
     position: relative;
     padding-top: 6px;
+    filter: drop-shadow(-6px 10px 21px #000);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
 }
 
+.pricing-box:hover {
+    margin: 7px 40px;
+}
+
+.pricing-content ul li i.far.fa-times-circle {
+    color: #8d0707;
+}
 .pricing-header {
     background-color: #fff;
     width: auto;
@@ -273,12 +313,14 @@ table.table-box tr th {
 .pricing-header h3 {
     position: absolute;
     bottom: 15px;
-    right: 50%;
+    right: 31%;
     font-size: 21px;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-right: -46px;
     color: #000;
+    width: 200px;
+    height: auto;
 }
 
 .pricing-rate {
@@ -287,23 +329,59 @@ table.table-box tr th {
     left: -17px;
     z-index: 9;
     padding: 38px 42px;
-    box-shadow: -6px 10px 21px #000;
-}
-
-.pricing-rate:after {
-    position: absolute;
     content: "";
-    background-color: blue;
     width: 213px;
     height: 212px;
-    top: 0;
-    left: 0;
     clip-path: polygon(0 0, 84% 0, 67% 49%, 0 49%);
-    z-index: -9;
     border-radius: 10px;
-    webkit-clip-path: polygon(0 0, 84% 0, 67% 49%, 0 49%);
-    background-image: linear-gradient(to bottom, #decba4, #3e5151);
+    /* webkit-clip-path: polygon(0 0, 84% 0, 67% 49%, 0 49%);
+    background-image: linear-gradient(to bottom, #decba4, #3e5151); */
 }
+
+.pricing-rate h2 {
+    border-radius: 10px;
+    padding-right: 32px;
+    font-size: 29px;
+    margin-left: -45px;
+    margin-top: -7px;
+}
+
+.pricing-rate h2 span {
+    font-size: 21px;
+    position: absolute;
+    top: 28px;
+    right: 88px;
+}
+.pricing-content {
+    padding: 40px 0;
+}
+
+.pricing-content ul li {
+    line-height: 2.3;
+    border-bottom: 1px solid #999;
+}
+
+.pricing-content ul li i {
+    margin-right: 11px;
+    font-size: 16px;
+}
+
+/* .pricing-box a {
+    display: inline-block;
+    color: #fff;
+    padding: 6px 25px;
+    background-color: #8d0707;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.pricing-box a:hover {
+    background-color: #334abb;
+    color: #000;
+} */
 /* ============================ Register Section ============================ */
 /* ============================ Contact Section ============================ */
 /* ============================ Footer Area ============================ */
