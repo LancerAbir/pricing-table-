@@ -15,7 +15,7 @@
         <!-- Main CSS -->
         <link rel="stylesheet" href="./style.css" />
     </head>
-    <body>
+    <body id="upTo">
         <!-- Header Area Start -->
         <header class="header">
             <div class="container">
@@ -533,17 +533,101 @@
         <section id="register">
             <div class="container">
                 <div class="section-title"><h2>Section Register</h2></div>
-                <h2 class="register-title">Go on to Register!</h2>
-                <form action="">
-                    <label for="text">Name</label><br />
-                    <input type="text" placeholder="Your Name" />
-                    <label for="email">Email</label><br />
-                    <input type="email" placeholder="Your Email" />
-                    <label for="text">Email</label><br />
-                    <input type="text" placeholder="Your Subject" />
-                    <textarea id="" name="" rows="4" cols="50"> </textarea>
-                    <input type="submit" value="Send Message" />
-                </form>
+
+                <div id="signUp">
+                    <div class="register-box">
+                        <div class="signUp-form">
+                            <h3 class="register-title">Sign Up...</h3>
+                            <form action="">
+                                <i class="fas fa-user"
+                                    ><input type="text" placeholder="Your Name"
+                                /></i>
+                                <i class="fas fa-envelope-open-text"
+                                    ><input
+                                        type="email"
+                                        placeholder="Your Email"
+                                /></i>
+
+                                <i class="fas fa-lock"
+                                    ><input
+                                        type="password"
+                                        placeholder="Password"
+                                /></i>
+                                <i class="fas fa-unlock"
+                                    ><input
+                                        type="password"
+                                        placeholder="Repeat Your Password"
+                                /></i>
+                                <br />
+                                <input
+                                    type="checkbox"
+                                    name="vehicle1"
+                                    value="Bike"
+                                />
+                                <label for="vehicle1">
+                                    I agree all statements in Terms of
+                                    service</label
+                                ><br />
+
+                                <input type="submit" value="Sign Up" />
+                                <a href="#signIn">I am already signed in</a>
+                            </form>
+                        </div>
+                        <div class="signUp-img">
+                            <img
+                                src="./img/signup-image.jpg"
+                                alt="SignUp Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div id="signIn" class="register-box">
+                    <div class="register-box">
+                        <div class="signUp-img">
+                            <img
+                                src="./img/signin-image.jpg"
+                                alt="SignUp Image"
+                            />
+                        </div>
+                        <div class="signUp-form">
+                            <h3 class="register-title">Sign In...</h3>
+                            <form action="">
+                                <i class="fas fa-user"
+                                    ><input type="text" placeholder="Your Name"
+                                /></i>
+                                <i class="fas fa-lock"
+                                    ><input
+                                        type="password"
+                                        placeholder="Password"
+                                /></i>
+                                <br />
+                                <input
+                                    type="checkbox"
+                                    name="vehicle2"
+                                    value="Bike"
+                                />
+                                <label for="vehicle2"> Remember me</label><br />
+
+                                <input type="submit" value="Sign In" />
+                                <a href="#signUp">Create an account</a>
+                            </form>
+
+                            <div class="social-login">
+                                <p>Or login with</p>
+                                <a href="#"
+                                    ><i class="fab fa-facebook-square"></i
+                                ></a>
+
+                                <a href="#"
+                                    ><i class="fab fa-google-plus-square"></i
+                                ></a>
+                                <a href="#"
+                                    ><i class="fab fa-github-square"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Register Section End -->
@@ -632,6 +716,15 @@
                 <p>&copy; 2020 All Rights Reserved by LANCER ABIR.</p>
             </div>
         </footer>
-        <!-- Footer Section Start -->
+        <!-- Footer Section End -->
+        <!-- Go to Upper Start -->
+        <div class="up">
+            <nav>
+                <li>
+                    <a href="#upTo"> <i class="fas fa-cloud-upload-alt"></i></a>
+                </li>
+            </nav>
+        </div>
+        <!-- Go to Upper End -->
     </body>
 </html>
