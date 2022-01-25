@@ -55,10 +55,10 @@ div.up {
     bottom: 0;
     position: sticky;
     position: -webkit-sticky;
-    z-index: 999;
+    z-index: 9;
 }
 .up nav li i {
-    z-index: 999;
+    z-index: 99;
     color: #02425b;
     font-size: 40px;
     cursor: pointer;
@@ -135,7 +135,7 @@ nav li a:hover {
     color: #333;
 }
 .header-content h2 span {
-    color: #02425b;
+    color: #00aea6;
     text-transform: uppercase;
 }
 .header-content p {
@@ -406,6 +406,15 @@ h3.register-title {
     color: #00aea6;
 }
 
+.signUp-form input[type="email"] {
+    border: none;
+    margin-left: 0px;
+    margin-bottom: 3px;
+    padding-bottom: 10px;
+    width: 385px;
+    outline: none;
+}
+
 .register-box input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -449,6 +458,7 @@ section#register a {
     color: #02425b;
     font-weight: 700;
     margin-left: 20px;
+    text-decoration: underline;
 }
 
 div#signUp {
@@ -482,14 +492,108 @@ div#signUp {
     color: #e72734;
 }
 /* ============================ Contact Section ============================ */
+section#contact {
+    background-image: url(./img/google-map.png);
+    background-size: cover;
+    background-position: center center;
+}
+.contact-box {
+    display: flex;
+}
+
+.contact-form h2,
+.contact-info h2 {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-box form input[type="text"],
+input[type="email"],
+textarea {
+    padding: 11px 20px;
+    margin-bottom: 20px;
+    border-radius: 23px;
+    background: transparent;
+    border: 1px solid #02425b;
+    color: #02425b;
+    width: 100%;
+}
+
+.contact-box input[type="submit"] {
+    padding: 11px 20px;
+    border-radius: 23px;
+    background-color: #02425b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+    border: none;
+}
+
+.contact-box input[type="submit"]:hover {
+    background-color: #999;
+    color: #000;
+}
+
+.contact-form {
+    padding: 22px 0;
+}
+
+.from-name {
+    display: flex;
+    width: 100%;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #00aea6;
+    opacity: 0.8;
+    color: #fff;
+    padding: 17px 109px;
+    margin: -25px 50px;
+}
+
+.contact-info i {
+    font-size: 20px;
+    color: #ddd;
+    background-color: #0a726d;
+    padding: 13px 16px;
+    border-radius: 50%;
+    margin-right: 9px;
+    border: 1px solid #ddd;
+}
+
+.contact-info span {
+    margin-right: 8px;
+    font-weight: 700;
+}
+
+.contact-info a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.contact-info p {
+    margin-bottom: 13px;
+}
 /* ============================ Footer Area ============================ */
 footer#footer {
     position: relative;
     width: 100%;
+    color: #ddd;
 }
 footer#footer:after {
     background-image: url(./img/footer.png);
     position: absolute;
+    background-size: cover;
+    background-position: center center;
     width: 100%;
     height: 100%;
     top: 0;
@@ -497,4 +601,119 @@ footer#footer:after {
     content: "";
     z-index: -9;
     box-sizing: border-box;
+}
+
+.footer-top {
+    display: flex;
+    padding: 90px 0;
+}
+
+.footer-content {
+    flex: 1;
+    max-width: 25%;
+    line-height: 1.6;
+    margin-right: 11px;
+    padding-right: 30px;
+}
+
+.footer-populer-posts-box {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.footer-populer-posts-box img {
+    max-width: 90px;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 18px;
+}
+
+img.footer-logo {
+    max-width: 130px;
+    margin-bottom: 20px;
+}
+
+.footer-social i {
+    margin-right: 10px;
+    padding: 10px 11px;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.footer-social i:nth-child(1) {
+    background-color: #3c5997;
+    padding: 11px 15px;
+}
+.footer-social i:nth-child(2) {
+    background-color: #55aaf4;
+}
+.footer-social i:nth-child(3) {
+    background-color: #ea3d60;
+}
+.footer-social i:nth-child(4) {
+    background-color: #02bbf1;
+}
+.footer-bottom {
+    padding: 28px 0;
+    border-top: 1px solid #999;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer-recent-posts-box h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.footer-recent-posts-box {
+    margin-bottom: 20px;
+}
+
+.footer-recent-posts-box h4 {
+    color: mediumvioletred;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.footer-recent-posts {
+    flex: 1;
+}
+
+.footer-populer-posts {
+    flex: 1;
+}
+
+.footer-contactUs {
+    flex: 1;
+}
+
+.footer-contact-box {
+    margin-bottom: 20px;
+}
+
+.footer-contact-box i {
+    color: mediumvioletred;
+    margin-right: 10px;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.footer-contact-box a {
+    display: inline-block;
+    color: #ddd;
+}
+/* ============================ Footer Bottom Area ============================ */
+
+.footer-bottom {
+    padding: 28px 0;
+    border-top: 1px solid #999;
+    text-align: center;
 }
